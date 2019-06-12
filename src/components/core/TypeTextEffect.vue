@@ -68,13 +68,12 @@ import { setTimeout } from 'timers';
   h3 {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: #fff;
-    font-size: 180%;
-    font-weight: 300;
+
     text-transform: uppercase;
-    word-spacing: 4px;
-    letter-spacing: 1px;
+    word-spacing: 0.4rem;
+    letter-spacing: 0.1rem;
 
     span.typed-text {
       color: #e67e22;
@@ -82,8 +81,8 @@ import { setTimeout } from 'timers';
 
     span.cursor {
       display: inline-block;
-      margin-left: 3px;
-      width: 4px;
+      margin-left: 0.3rem;
+      width: 0.4rem;
       background-color: #fff;
       animation: cursorBlink 1s infinite;
     }

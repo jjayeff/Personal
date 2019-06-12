@@ -3,7 +3,7 @@
     <div class="container">
       <h2>Portfolio</h2>
       <div class="row">
-        <div class="col span-1-of-4 box" v-for="list in lists" :key="list.name">
+        <div class="col-md-3 col-xs-6" v-for="list in lists" :key="list.name">
           <img :src="list.img" alt="Lisbon">
           <h3>{{list.name}}</h3>
         </div>
@@ -33,18 +33,6 @@
             name: 'FindStock',
             img: 'https://pbs.twimg.com/media/D8RFAQsWsAclw0E.jpg'
           },
-          {
-            name: 'FindStock',
-            img: 'https://site-assets.mediaoxide.com/workpointnews/2018/06/21161010/1529572207_41633_chuwit.png'
-          },
-          {
-            name: 'FindStock',
-            img: 'https://scontent-fbkk5-7.us-fbcdn.net/v1/t.1-48/1426l78O9684I4108ZPH0J4S8_842023153_K1DlXQOI5DHP/dskvvc.qpjhg.xmwo/w/data/1133/1133409-img.tjmuhy.0p.jpg'
-          },
-          {
-            name: 'FindStock',
-            img: 'https://hilight.kapook.com/img_cms2/user/amusic/a3_184.jpg'
-          }
         ]
       }
     }
@@ -62,8 +50,8 @@
 
     img {
       cursor: pointer;
-      width: 90%;
-      height: 240px;
+      width: 80%;
+      height: auto;
     }
 
     h3 {

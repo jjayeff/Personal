@@ -48,14 +48,24 @@
     h1 {
       text-align: center;
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
       color: #fff;
-      font-size: 240%;
+      //font-size: 240%;
       text-transform: uppercase;
-      letter-spacing: 10px;
-      word-spacing: 4px;
+      letter-spacing: 1rem;
+      word-spacing: 0.4rem;
 
       animation: moveInLeft 1s ease-out;
+
+      &:after {
+        display: block;
+        height: 0.2rem;
+        background-color: #e97e22;
+        content: "";
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 2rem;
+      }
     }
 
     .text-animation {
@@ -102,6 +112,11 @@
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
 
 </style>
 

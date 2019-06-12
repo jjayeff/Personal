@@ -2,22 +2,24 @@
     <section class="abount-me">
       <div class="container">
         <div class="row">
-          <div class="col span-1-of-3 image-box">
-            <img class="image" src="https://www.cm108.com/bbb/uploads/monthly_2016_04/571f6f5abe5bb_cccc_1-(1).jpg.97e02b4b4d5cc2c538c9811bff9c7777.jpg" alt="">
-            <h3>ekkawit lertkrai<br>developer & programmer</h3>
-            <p>+66 8998 49157</p>
-            <p>ekkawit.lertkrai@gmail.com</p>
-            <p>bangkok thailand.</p>
+          <div class="col-md-4">
+            <div class="image-box">
+              <img class="image" src="https://www.cm108.com/bbb/uploads/monthly_2016_04/571f6f5abe5bb_cccc_1-(1).jpg.97e02b4b4d5cc2c538c9811bff9c7777.jpg" alt="">
+              <h6>ekkawit lertkrai<br>developer & programmer</h6>
+              <p>+66 8998 49157</p>
+              <p>ekkawit.lertkrai@gmail.com</p>
+              <p>bangkok thailand.</p>
+            </div>
           </div>
-          <div class="col span-2-of-3">
-            <h2>who am i</h2>
+          <div class="col-md-8">
+            <h3>who am i</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellat quia obcaecati quam quaerat. Id, magni doloremque, excepturi minus debitis eaque quia odit beatae soluta minima corrupti alias quo totam?</p>
             <div class="education">
-              <h2>My Education</h2>
+              <h3>My Education</h3>
               <div class="row education-content">
-                <img class="col span-1-of-2" src="https://upload.wikimedia.org/wikipedia/th/6/62/KMUTNB-LOGO.jpg" alt="">
-                <div class="col span-1-of-2">
-                  <h3>Computer Science, Bachelor's Degree</h3>
+                <img class="col-xs-3" src="https://upload.wikimedia.org/wikipedia/th/6/62/KMUTNB-LOGO.jpg" alt="">
+                <div class="col-xs-9">
+                  <h4>Computer Science, Bachelor's Degree</h4>
                   <h5>KMUTNB, BANGKOK, THAILAND, 2014-2019</h5>
                 </div>
               </div>
@@ -36,10 +38,11 @@
 
 <style lang="scss" scoped>
   .abount-me {
-    margin: 50px;
+    margin: 5rem;
   }
   .image-box {
-  text-align: center;
+    text-align: center;
+    padding: 0.5rem;
 
     .image {
       height: auto;
@@ -47,58 +50,82 @@
       border-radius: 50%;
     }
 
-    h3 {
+    h6 {
       text-transform: uppercase;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      padding: 0.2rem 0;
     }
   }
     
-  h2 {
-    font-size: 180%;
-    word-spacing: 2px;
+  h3 {
+    word-spacing: 0.2rem;
     text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+    margin-bottom: 3rem;
+    letter-spacing: 0.1rem;
     font-weight: 300;
     text-transform: uppercase;
     &:after {
       display: block;
-      height: 2px;
+      height: 0.2rem;
       background-color: #e97e22;
       content: "";
-      width: 100px;
+      width: 10rem;
       margin: 0 auto;
-      margin-top: 20px;
+      margin-top: 2rem;
     }
   }
 
   .education {
-    margin-top: 50px;
+    margin-top: 5rem;
   }
   .education-content {
     img {
-      height: 100px; 
+      height: 8rem; 
       width: auto;
       vertical-align: middle; /* | top | bottom */
-      padding: 0px 40px; 
     }
 
     div {
-      margin: 15px;
-      padding: 10px;
-      padding-left: 30px;
-      border-left: 2px solid #e97e22;
+      padding: 1.5rem;
 
-      h3 {
+      h4 {
         font-size: 120%;
-        padding: 0px 5px;
+        padding: 0 0.5rem;
       }
 
       h5 {
-        padding: 5px 5px;
+        font-size: 100%;
+        padding: 0.5rem 0.5rem;
+        font-weight: 300;
       }
     }
-    
+  }
+
+  @media only screen and (max-width: 768px) {
+    .image-box {
+      margin-left: 190px
     }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .image-box {
+      margin-left: 155px
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .image-box {
+      margin-left: 125px
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .image-box {
+      margin-left: 65px
+    }
+  }
 </style>

@@ -2,21 +2,21 @@
   <section class="skills-education">
     <div class="container">
       <div class="skill">
-        <h2>my skill</h2>
+        <h3>my skill</h3>
         <div class="row">
-          <div class="col span-1-of-2">
-            <h3>programing</h3>
+          <div class="col-lg-6">
+            <h5>programing</h5>
             <ul class="row">
-              <li class="col span-1-of-3" v-for="skill in skills" :key="skill.name">
+              <li class="col-xs-6 col-sm-4" v-for="skill in skills" :key="skill.name">
                 <span>{{skill.name}}</span>
                 <img :src="skill.img" alt="">
               </li>
             </ul>
           </div>
-          <div class="col span-1-of-2">
-            <h3>experience with</h3>
+          <div class="col-lg-6">
+            <h5>experience with</h5>
             <ul class="row border-left">
-              <li class="col span-1-of-2" v-for="experience in experiences" :key="experience.name">
+              <li class="col-xs-6 col-sm-4 col-md-6 " v-for="experience in experiences" :key="experience.name">
                 <span>{{experience.name}}</span>
                 <img :src="experience.img" alt="">
               </li>
@@ -103,60 +103,69 @@
 
 <style lang="scss" scoped>
   .skills-education {
-    margin: 50px;
+    margin: 5rem;
   }
   .skill {
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
     text-align: center;
-    h2 {
-      font-size: 180%;
-      word-spacing: 2px;
-      margin-bottom: 30px;
-      letter-spacing: 1px;
+    h3 {
+      word-spacing: 0.2rem;
+      margin-bottom: 3rem;
+      letter-spacing: 0.1rem;
       font-weight: 300;
       text-transform: uppercase;
       &:after {
         display: block;
-        height: 2px;
+        height: 0.2rem;
         background-color: #e97e22;
         content: "";
-        width: 100px;
+        width: 10rem;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 2rem;
       }
     }
-    h3 {
-      text-align: center;
+    h5 {
+      word-spacing: 0.2rem;
+      margin-bottom: 3rem;
+      letter-spacing: 0.1rem;
+      font-weight: 300;
       text-transform: uppercase;
-      margin-bottom: 20px;
       &:after {
         display: block;
-        height: 2px;
+        height: 0.2rem;
         background-color: #e97e22;
         content: "";
-        width: 100px;
+        width: 10rem;
         margin: 0 auto;
-        margin-top: 5px;
+        margin-top: 0.5rem;
       }
     }
 
     .border-left {
-      border-left: 2px solid #e97e22;
+      border-left: 0.2rem solid #e97e22;
     }
 
     li {
-      padding: 5px;
+      padding: 0.5rem;
 
       img {
-        height: 30px;
+        height: 3rem;
         width: auto;
         vertical-align: middle; /* | top | bottom */
-        margin-left: 20px;
+        margin-left: 2rem;
       }
 
       span {
         display: inline-block;
         vertical-align: middle; /* | top | bottom */
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .skill {
+      .border-left {
+        border-left: transparent;
       }
     }
   }

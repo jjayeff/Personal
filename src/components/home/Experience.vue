@@ -1,61 +1,60 @@
 <template>
   <section class="experience">
     <div class="container">
-      <h2>Experience</h2>
-      <div class="row">
-        <h1>2017</h1>
-        <div>
-          <h1>Intership</h1>
-          <h3>ITTP, BANGKOK, THAILAND </h3>
-          <ul>
-            <li>React/Redux</li>
-            <li>React Native</li>
-            <li>NoSQL</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-          <h1>2018</h1>
-          <div>
-            <h1>Programmer</h1>
-            <h3>TopTrader, BANGKOK, THAILAND </h3>
-            <ul>
-              <li>C++</li>
-              <li>C#/ASP.net</li>
-              <li>MySQL</li>
-            </ul>
-          </div>
-      </div>
+      <h3>Experience</h3>
+      <app-timeline :data="lists"/>
     </div>
   </section>
 </template>
 
 <script>
-export default {
-
-}
+  import appTimeline from '../core/Timeline1.vue';
+  export default {
+    components: {
+      appTimeline
+    },
+    data() {
+      return {
+        lists: [
+          {
+            pointion: 'Intership',
+            company: 'ITTP',
+            info: 'React, React Native, MongoDB',
+            start: 'MAY, 2017',
+            end: 'DEC, 2017',
+          },
+          {
+            pointion: 'Programmer',
+            company: 'Toptrader',
+            info: 'C++, C#/ASP.net, MySQL',
+            start: 'JUNE, 2018',
+            end: 'MAY, 2019',
+          }
+        ]
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
   .experience {
     background-color: #f4f4f4;
-    padding: 50px;
-    h2 {
-      font-size: 180%;
-      word-spacing: 2px;
-      margin-bottom: 30px;
-      letter-spacing: 1px;
+    padding: 5rem;
+    h3 {
+      word-spacing: 0.2rem;
+      margin-bottom: 3rem;
+      letter-spacing: 0.1rem;
       text-align: center;
       font-weight: 300;
       text-transform: uppercase;
       &:after {
         display: block;
-        height: 2px;
+        height: 0.1rem;
         background-color: #e97e22;
         content: "";
-        width: 100px;
+        width: 10rem;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 2rem;
       }
     }
   }

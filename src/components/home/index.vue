@@ -5,6 +5,8 @@
     <app-skills-education/>
     <app-portfolio/>
     <app-experience/>
+    <app-contact/>
+    <app-footer/>
   </div>
 </template>
 
@@ -14,6 +16,8 @@
   import appSkillsEducation from './SkillsEducation.vue';
   import appExperience from './Experience.vue';
   import appPortfolio from './Portfolio.vue';
+  import appContact from './Contact.vue';
+  import appFooter from '../core/Footer1.vue';
 
   export default {
     components: {
@@ -21,7 +25,9 @@
       appAbout,
       appSkillsEducation,
       appExperience,
-      appPortfolio
+      appPortfolio,
+      appContact,
+      appFooter
     }
   }
 </script>
