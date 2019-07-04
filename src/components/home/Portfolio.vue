@@ -18,19 +18,19 @@
       return {
         lists: [
           {
-            name: 'FindStock',
+            name: 'Project1',
             img: 'https://s.isanook.com/ca/0/ud/279/1395449/56480274_2523567494381821_363.jpg'
           },
           {
-            name: 'FindStock',
+            name: 'Project2',
             img: 'https://hilight.kapook.com/img_cms2/user/surauch/news/pareena.jpg'
           },
           {
-            name: 'FindStock',
+            name: 'Project3',
             img: 'https://static.wixstatic.com/media/55a97f_74f94a7240c044a78c59eb3f378c240e~mv2.jpg/v1/fill/w_303,h_303,al_c,lg_1,q_80/55a97f_74f94a7240c044a78c59eb3f378c240e~mv2.jpg'
           },
           {
-            name: 'FindStock',
+            name: 'Project4',
             img: 'https://pbs.twimg.com/media/D8RFAQsWsAclw0E.jpg'
           },
         ]
