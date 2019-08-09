@@ -17,7 +17,7 @@ export default {
     return {
       lists: [
         {
-          pointion: "Intership",
+          pointion: "Internship",
           company: "ITTP",
           info: "React, React Native, MongoDB",
           start: "MAY, 2017",
