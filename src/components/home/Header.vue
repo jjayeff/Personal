@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       narbar: {
-        logo: 'alexdev',
+        logo: 'ekkawit',
         lists: [
           'about me',
           'portfolio',
